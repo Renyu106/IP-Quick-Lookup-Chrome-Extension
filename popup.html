@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.21/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://assets.winsub.kr/UIKIT/COMMON.css">
+    <style>
+        body {
+            margin-top: 15px;
+            width: 400px;
+            height: 400px;
+            padding: 10px;
+        }
+
+        .uk-form-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="uk-container">
+        <form id="ipLookupForm" class="uk-form-stacked">
+            <div class="uk-margin">
+                <div class="uk-form-controls">
+                    <input class="uk-input" type="text" id="ipAddress" placeholder="IP Address or Domain" autocomplete="off">
+                </div>
+                <small>Powerd by <a href="https://ip-api.winsub.kr/" target="_blank">WinSub GEO IP</a></small>
+            </div>
+            <button class="uk-button uk-button-secondary uk-button-small" type="submit">Lookup</button>
+        </form>
+        <div id="results" class="uk-margin-top"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.21/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.21/js/uikit-icons.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
